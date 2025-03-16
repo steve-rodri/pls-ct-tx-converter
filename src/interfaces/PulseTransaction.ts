@@ -1,6 +1,24 @@
+export type TransactionType =
+  | "ADD_LIQUIDITY"
+  | "AIRDROP"
+  | "BRIDGE"
+  | "BUY"
+  | "INTEREST_PAYMENT"
+  | "MINT"
+  | "REMOVE_LIQUIDITY"
+  | "RECEIVE"
+  | "SEND"
+  | "SELL"
+  | "SPAM"
+  | "STAKE"
+  | "TRADE"
+  | "TRANSFER"
+  | "UNSTAKE"
+  | "WRAP"
+
 export interface PulseTransaction {
   Date: string
-  Type: string
+  Type: TransactionType
   "Transaction ID": string
   "Received Quantity": string
   "Received Currency": string
