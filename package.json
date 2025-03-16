@@ -3,7 +3,8 @@
   "module": "src/main.ts",
   "type": "module",
   "scripts": {
-    "convert": "bun run src/main.ts"
+    "convert": "bun run src/main.ts",
+    "test": "vitest --run"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
@@ -11,7 +12,9 @@
     "eslint": "^9.22.0",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
-    "typescript-eslint": "^8.26.1"
+    "ts-mockito": "^2.6.1",
+    "typescript-eslint": "^8.26.1",
+    "vitest": "^3.0.8"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
