@@ -1,9 +1,9 @@
 {
   "name": "transaction-converter",
-  "module": "main.ts",
+  "module": "src/main.ts",
   "type": "module",
   "scripts": {
-    "start": "bun run main.ts"
+    "convert": "bun run src/main.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
@@ -18,5 +18,9 @@
   },
   "prettier": {
     "semi": false
+  },
+  "dependencies": {
+    "csv-parse": "^5.6.0",
+    "csv-stringify": "^6.5.2"
   }
 }
